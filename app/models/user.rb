@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
     BCrypt::Password.new(digest).is_password?(token)
   end
 
-private
+  private
 
     # Converts email to all lower-case.
     def downcase_email
