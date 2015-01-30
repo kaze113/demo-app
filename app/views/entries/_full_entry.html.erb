@@ -24,4 +24,7 @@
           <%= f.submit %>
         </p>
       <% end %>
+      <% else %>
+        <p><%= link_to "Sign up", signup_path %> or <%= link_to "Log in", login_path %> to add a comment!
+        </p>
     <% end %> 
