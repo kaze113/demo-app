@@ -2,7 +2,12 @@
 <h1><%= @entry.title %></h1>
 <%= image_tag @entry.picture.url if @entry.picture? %>
 <p><%= simple_format(@entry.content) %></p><br/>
-<p><i>Upload on <%= @entry.created_at.strftime("%A, %d %B %Y at %I:%M%p") %></i></p>
+<p><i>Upload on <%= @entry.created_at.strftime("%A, %d %B %Y at %I:%M%p") %></i>
+  <% if current_user?(@entry.user) %><br/>
+    <%= link_to "Delete", @entry, method: :delete,
+                                         data: { confirm: "You sure?" } %>
+      <% end %>
+</p>
 
     <p>Comments (<%= @entry.comments.count %>)</p>
     <% @entry.comments.each do |comment| %>
