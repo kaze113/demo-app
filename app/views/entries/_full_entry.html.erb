@@ -1,26 +1,30 @@
   
 <h1><%= @entry.title %></h1>
+<p><i>Upload on <%= @entry.created_at.strftime("%A, %d %B %Y at %I:%M%p") %></i></p>
+
 <p><%= @entry.content %></p>
 
-<h2>Comments</h2>
-<% @entry.comments.each do |comment| %>
-  <p>
-    <% @user = User.find(comment.user_id) %>
-		<%= gravatar_for @user, size: 50 %>
-    <%= link_to @user.name, @user %>
-    <%= comment.body %>
-  </p>
-<% end %>
-<% if logged_in? %>
-  <h2>Add a comment:</h2>
-  <%= form_for([@entry, @entry.comments.build]) do |f| %>
-    <p>
-  	<%= f.hidden_field :user_id, :value => current_user.id %>    
-  	<%= f.label :body %><br>
-      <%= f.text_area :body %>
-    </p>
-    <p>
-      <%= f.submit %>
-    </p>
-  <% end %>
-<% end %> 
+  <div class="entries">
+    <h2>Comments (<%= @entry.comments.count %>)</h2>
+    <% @entry.comments.each do |comment| %>
+      <p>
+        <% @user = User.find(comment.user_id) %>
+    		<%= gravatar_for @user, size: 50 %>
+        <%= link_to @user.name, @user %>
+        <%= comment.body %>
+      </p>
+    <% end %>
+    <% if logged_in? %>
+      <h2>Add a comment:</h2>
+      <%= form_for([@entry, @entry.comments.build]) do |f| %>
+        <p>
+      	<%= f.hidden_field :user_id, :value => current_user.id %>    
+      	<%= f.label :body %><br>
+          <%= f.text_area :body %>
+        </p>
+        <p>
+          <%= f.submit %>
+        </p>
+      <% end %>
+    <% end %> 
+  </div>
