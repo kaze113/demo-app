@@ -8308,65 +8308,67 @@ input {
 }
 /* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries li {
+  overflow: auto;
   padding: 10px 0;
   border-top: 1px solid #e8e8e8;
 }
-/* line 260, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 261, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries h1 {
   font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: left;
 }
-/* line 266, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 267, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .user {
   margin-top: 5em;
   padding-top: 0;
 }
-/* line 270, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 271, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .title {
   display: block;
   margin-left: 60px;
 }
-/* line 273, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 274, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .title img {
   display: block;
   padding: 5px 0;
 }
-/* line 278, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 279, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .content {
   display: block;
   margin-left: 60px;
 }
-/* line 281, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 282, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .content img {
   display: block;
   padding: 5px 0;
 }
-/* line 286, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 287, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .timestamp {
   color: #777777;
   display: block;
   margin-left: 60px;
 }
-/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 292, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 299, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 300, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+z
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
 }
 
-/* line 305, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 306, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture {
   margin-top: 10px;
 }
-/* line 307, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 308, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture input {
   border: 0;
 }

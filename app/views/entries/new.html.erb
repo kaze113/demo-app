@@ -5,8 +5,10 @@
   <div class="col-md-6 col-md-offset-3">
 		<%= form_for(@entry, html: { multipart: true }) do |f| %>
 		  <%= render 'shared/error_messages', object: f.object %>
-		  <div class="field">
+		  <div >
+      	<%= f.label :title %>
 		    <%= f.text_field :title, placeholder: "Title..." %>
+		    <%= f.label :content %>
 		    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
 		  </div>
 		  <%= f.submit "Post", class: "btn btn-primary" %>
