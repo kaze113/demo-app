@@ -11,15 +11,16 @@
     <%= comment.body %>
   </p>
 <% end %>
-
-<h2>Add a comment:</h2>
-<%= form_for([@entry, @entry.comments.build]) do |f| %>
-  <p>
-	<%= f.hidden_field :user_id, :value => current_user.id %>    
-	<%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<% if logged_in? %>
+  <h2>Add a comment:</h2>
+  <%= form_for([@entry, @entry.comments.build]) do |f| %>
+    <p>
+  	<%= f.hidden_field :user_id, :value => current_user.id %>    
+  	<%= f.label :body %><br>
+      <%= f.text_area :body %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+<% end %> 
