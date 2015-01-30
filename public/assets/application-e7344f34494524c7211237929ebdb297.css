@@ -8300,75 +8300,88 @@ input {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* entries */
+/* Entries index */
 /* line 253, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entriesindex {
+  list-style: none;
+  margin: 0;
+}
+/* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entriesindex li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* entries */
+/* line 265, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries {
   list-style: none;
   padding: 0;
 }
-/* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 268, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries li {
   overflow: auto;
   padding: 10px 0;
-  border-top: 1px solid #e8e8e8;
+  border-top: 10px solid #e8e8e8;
 }
-/* line 261, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 273, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries h1 {
   font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: left;
 }
-/* line 267, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 279, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .user {
   margin-top: 5em;
-  padding-top: 0;
+  padding-top: 10px 0;
 }
-/* line 271, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 283, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .title {
   display: block;
   margin-left: 60px;
 }
-/* line 274, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 286, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .title img {
   display: block;
   padding: 5px 0;
 }
-/* line 279, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .content {
   display: block;
   margin-left: 60px;
 }
-/* line 282, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 294, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .content img {
   display: block;
   padding: 5px 0;
 }
-/* line 287, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 299, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .timestamp {
   color: #777777;
   display: block;
   margin-left: 60px;
 }
-/* line 292, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 304, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 .entries .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 300, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 312, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 z
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
 }
 
-/* line 306, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 318, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture {
   margin-top: 10px;
 }
-/* line 308, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 320, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture input {
   border: 0;
 }
