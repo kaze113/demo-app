@@ -1,13 +1,7 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  body: MyText
-  entry: 
-  user: MyString
-  references: MyString
+  body: "MyText"
+  entry: ants
 
 two:
-  body: MyText
-  entry: 
-  user: MyString
-  references: MyString
+  body: "MyText1"
+  entry: ants

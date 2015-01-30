@@ -26,3 +26,23 @@ users = User.order(:created_at).take(6)
   content = Faker::Lorem.sentence(50)
   users.each { |user| user.entries.create!(title: title, content: content) }
 end
+
+# Comments
+commenters = User.order(:created_at).take(6)
+entries = Entry.order(:created_at).take(6)
+2.times do
+  body = Faker::Lorem.sentence(10)
+  commenters.each { |commenter|
+    entries.each { |entry|
+      entry.comments.create(user_id: commenter.id, body: body)
+    }
+  }
+end
+
+# Following relationships
+users = User.all
+user  = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }
