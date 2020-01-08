@@ -8300,56 +8300,88 @@ input {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* microposts */
+/* Entries index */
 /* line 253, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts {
+.entriesindex {
+  list-style: none;
+  margin: 0;
+}
+/* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entriesindex li {
+  overflow: auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* entries */
+/* line 265, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries {
   list-style: none;
   padding: 0;
 }
-/* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts li {
+/* line 268, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries li {
+  overflow: auto;
   padding: 10px 0;
-  border-top: 1px solid #e8e8e8;
+  border-top: 10px solid #e8e8e8;
 }
-/* line 260, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .user {
+/* line 273, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries h1 {
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+/* line 279, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .user {
   margin-top: 5em;
-  padding-top: 0;
+  padding-top: 10px 0;
 }
-/* line 264, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .content {
+/* line 283, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .title {
   display: block;
   margin-left: 60px;
 }
-/* line 267, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .content img {
+/* line 286, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .title img {
   display: block;
   padding: 5px 0;
 }
-/* line 272, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .timestamp {
+/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .content {
+  display: block;
+  margin-left: 60px;
+}
+/* line 294, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .content img {
+  display: block;
+  padding: 5px 0;
+}
+/* line 299, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .timestamp {
   color: #777777;
   display: block;
   margin-left: 60px;
 }
-/* line 277, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .gravatar {
+/* line 304, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 285, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 312, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+z
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
 }
 
-/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 318, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture {
   margin-top: 10px;
 }
-/* line 293, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 320, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture input {
   border: 0;
 }

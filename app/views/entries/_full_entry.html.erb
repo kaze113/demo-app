@@ -1,0 +1,35 @@
+  
+<h1><%= @entry.title %></h1>
+<%= image_tag @entry.picture.url if @entry.picture? %>
+<p><%= simple_format(@entry.content) %></p><br/>
+<p><i>Upload on <%= @entry.created_at.strftime("%A, %d %B %Y at %I:%M%p") %></i>
+  <% if current_user?(@entry.user) %><br/>
+    <%= link_to "Delete", @entry, method: :delete,
+                                         data: { confirm: "You sure?" } %>
+      <% end %>
+</p>
+
+    <p>Comments (<%= @entry.comments.count %>)</p>
+    <% @entry.comments.each do |comment| %>
+      <p>
+        <% @user = User.find(comment.user_id) %>
+    		<%= gravatar_for @user, size: 50 %>
+        <%= link_to @user.name, @user %>
+        <%= comment.body %>
+      </p><br/>
+    <% end %>
+    <% if logged_in? %>
+      <p>Add a comment:</p>
+      <%= form_for([@entry, @entry.comments.build]) do |f| %>
+        <p>
+      	<%= f.hidden_field :user_id, :value => current_user.id %>    
+          <%= f.text_area :body %>
+        </p>
+        <p>
+          <%= f.submit %>
+        </p>
+      <% end %>
+      <% else %>
+        <p><%= link_to "Sign up", signup_path %> or <%= link_to "Log in", login_path %> to add a comment!
+        </p>
+    <% end %> 
