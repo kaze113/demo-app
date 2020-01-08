@@ -17,7 +17,8 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
     assert_select 'div.pagination'
     @user.entries.paginate(page: 1).each do |entry|
       assert_match entry.title, response.body
-      assert_match entry.content, response.body
+      assert_select "a[href=?]", @entry_path
+
     end
   end
 end

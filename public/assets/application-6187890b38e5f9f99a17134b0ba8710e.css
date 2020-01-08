@@ -8300,56 +8300,73 @@ input {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* microposts */
+/* entries */
 /* line 253, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts {
+.entries {
   list-style: none;
   padding: 0;
 }
 /* line 256, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts li {
+.entries li {
   padding: 10px 0;
   border-top: 1px solid #e8e8e8;
 }
 /* line 260, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .user {
+.entries h1 {
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+/* line 266, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .user {
   margin-top: 5em;
   padding-top: 0;
 }
-/* line 264, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .content {
+/* line 270, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .title {
   display: block;
   margin-left: 60px;
 }
-/* line 267, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .content img {
+/* line 273, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .title img {
   display: block;
   padding: 5px 0;
 }
-/* line 272, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .timestamp {
+/* line 278, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .content {
+  display: block;
+  margin-left: 60px;
+}
+/* line 281, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .content img {
+  display: block;
+  padding: 5px 0;
+}
+/* line 286, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .timestamp {
   color: #777777;
   display: block;
   margin-left: 60px;
 }
-/* line 277, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
-.microposts .gravatar {
+/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+.entries .gravatar {
   float: left;
   margin-right: 10px;
   margin-top: 5px;
 }
 
-/* line 285, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 299, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
 }
 
-/* line 291, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 305, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture {
   margin-top: 10px;
 }
-/* line 293, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
+/* line 307, /home/thuyanh/workspace/demo_app/app/assets/stylesheets/custom.css.scss */
 span.picture input {
   border: 0;
 }
